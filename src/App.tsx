@@ -1,19 +1,14 @@
+import { RouterProvider } from "react-router-dom";
 import "./App.css";
-import Cart from "./components/cart";
-import Counter from "./components/couter";
-// import Counter from "./components/couter";
-import ProductList from "./components/productlist";
+import { router } from "./routes";
+import LayoutHomepage from "./component/layoutHomepage";
+import Home from "./page/HomePage/Home";
+
 function App() {
     return (
         <>
-            <div className="w-96 mx-auto border border-gray-500 p-2">
-                <hr />
-                <Counter />
-                <hr />
-                {/* <ProductList /> */}
-                <hr />
-                {/* <Cart /> */}
-            </div>
+        <RouterProvider router={router}></RouterProvider>
+           
         </>
     );
 }

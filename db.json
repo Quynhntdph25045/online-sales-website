@@ -1,12 +1,103 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "product A"
+      "name": "Bánh Kem Hình shin",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyf3ekQ_ts-I_LMBOTL5DqjX-OGsz8i6crcz5JCIMzLuWqAkb8G268PR-SyN0R1ViP7PQ&usqp=CAU",
+      "price": "88300",
+      "desc": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+      "quantity": 5,
+      "title": "bánh làm từ trái cây ",
+      "id": "57"
     },
     {
-      "id": 2,
-      "name": "product B"
+      "name": "Bánh hình cốc trà sữa",
+      "img": "https://cuibakery.com/datafiles/1619170917_313.jpg",
+      "price": "1700",
+      "desc": "The Football Is Good For Training And Recreational Purposes",
+      "quantity": 5,
+      "title": "bánh làm từ trái cây ",
+      "id": "58"
+    },
+    {
+      "name": "bánh kem socola",
+      "img": "https://www.cet.edu.vn/wp-content/uploads/2018/01/tiramisu-duoc-che-bien-khac-nhau.jpg",
+      "price": "65200",
+      "desc": "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients",
+      "quantity": 5,
+      "title": "bánh làm từ trái cây ",
+      "id": "59"
+    },
+    {
+      "name": "bánh kem hình trái tim",
+      "img": "https://cdn.chanhtuoi.com/uploads/22/12/hinh-anh-banh-sinh-nhat-dep-doc-50-1024x683.jpg",
+      "price": "85100",
+      "desc": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+      "quantity": 11,
+      "title": "bánh làm từ trái cây ",
+      "id": "60"
+    },
+    {
+      "name": "Bánh kem hình gấu",
+      "img": "https://tiembanhdenui.com/wp-content/uploads/2022/12/tb3e.jpg",
+      "price": "34400",
+      "desc": "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive",
+      "quantity": 2,
+      "title": "bánh làm từ trái cây ",
+      "id": "61"
+    },
+    {
+      "name": "Bánh kem hình lợn",
+      "img": "https://banhkem24h.com/wp-content/uploads/2019/09/banh-kem-con-heo-11-400x400.jpg",
+      "price": "26400",
+      "desc": "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design",
+      "quantity": 57,
+      "title": "bánh làm từ trái cây ",
+      "id": "62"
+    }
+  ],
+  "users": [
+    {
+      "email": "dat@gmail.com",
+      "password": "$2a$10$h84/EkxO5gYvRosvXDtJweosCSfsEDIp9eBLLSXODVkvotlildsMW",
+      "name": "dat",
+      "role": "admin",
+      "id": 1
+    },
+    {
+      "email": "dat11@gmail.com",
+      "password": "$2a$10$VOU4hjYeiPi8UdjE.i1AkeeIpjWHxFBCZPuA2jzcbM2DLyBxD4AhS",
+      "name": "dattt",
+      "role": "member",
+      "id": 2
+    }
+  ],
+  "cart": [
+    {
+      "product": {
+        "name": "Gorgeous Soft Shirt",
+        "img": "https://picsum.photos/300/300",
+        "price": "34400",
+        "desc": "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive",
+        "quantity": 2,
+        "id": "61"
+      },
+      "quantity": 1,
+      "userId": 2,
+      "id": 6
+    },
+    {
+      "product": {
+        "name": "bánh kem socola",
+        "img": "https://www.cet.edu.vn/wp-content/uploads/2018/01/tiramisu-duoc-che-bien-khac-nhau.jpg",
+        "price": "65200",
+        "desc": "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients",
+        "quantity": 5,
+        "title": "bánh làm từ trái cây ",
+        "id": "59"
+      },
+      "quantity": 3,
+      "userId": 1,
+      "id": 12
     }
   ]
 }
