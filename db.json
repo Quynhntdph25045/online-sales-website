@@ -1,58 +1,108 @@
 {
   "products": [
     {
-      "name": "Bánh Kem Hình shin",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyf3ekQ_ts-I_LMBOTL5DqjX-OGsz8i6crcz5JCIMzLuWqAkb8G268PR-SyN0R1ViP7PQ&usqp=CAU",
-      "price": "88300",
-      "desc": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+      "name": "One Piece - Tập 99: “Luffy Mũ Rơm” (Bản Bìa Cứng) - Limited Edition - Tặng Kèm Postcard PVC Luffy",
+      "img": "https://cdn0.fahasa.com/media/catalog/product/8/9/8935244874983_1_1.jpg",
+      "price": "142.500",
+      "supplier":"Nhà Xuất Bản Kim Đồng",
+      "author":"Eiichiro Oda",
+      "publishing":"Kim Đồng",
+      "form":"Bìa Cứng",
       "quantity": 5,
       "title": "bánh làm từ trái cây ",
+      "rate": 5,
       "id": "57"
     },
     {
-      "name": "Bánh hình cốc trà sữa",
-      "img": "https://cuibakery.com/datafiles/1619170917_313.jpg",
-      "price": "1700",
-      "desc": "The Football Is Good For Training And Recreational Purposes",
+      "name": "One Piece - Tập 100: “Haki Bá Vương” (Bản Bìa Cứng) - Limited Edition - Tặng Kèm Postcard PVC Luffy",
+      "img": "https://cdn0.fahasa.com/media/catalog/product/8/9/8935244876413_2.jpg",
+      "price": "142.500",
+      "supplier":"Nhà Xuất Bản Kim Đồng",
+      "author":"Eiichiro Oda",
+      "publishing":"Kim Đồng",
+      "form":"Bìa Cứng",
       "quantity": 5,
+      "rate": 4.5,
       "title": "bánh làm từ trái cây ",
       "id": "58"
     },
     {
-      "name": "bánh kem socola",
-      "img": "https://www.cet.edu.vn/wp-content/uploads/2018/01/tiramisu-duoc-che-bien-khac-nhau.jpg",
-      "price": "65200",
-      "desc": "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients",
-      "quantity": 5,
+      "name": "One Piece Tập 101: “Siêu Sao Thượng Đài” - Bản Bìa Cứng - Limited Edition - Tặng Kèm Postcard PVC",
+      "img": "https://cdn0.fahasa.com/media/catalog/product/8/9/8935244876444_1.jpg",
+      "price": "150.000",
+      "supplier":"Nhà Xuất Bản Kim Đồng",
+      "author":"Eiichiro Oda",
+      "publishing":"Kim Đồng",
+      "form":"Bìa Cứng",
+      "quantity": 11,
+      "rate": 4.5,
       "title": "bánh làm từ trái cây ",
       "id": "59"
     },
     {
-      "name": "bánh kem hình trái tim",
-      "img": "https://cdn.chanhtuoi.com/uploads/22/12/hinh-anh-banh-sinh-nhat-dep-doc-50-1024x683.jpg",
-      "price": "85100",
-      "desc": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
-      "quantity": 11,
+      "name": "One Piece - Tập 99: “Luffy Mũ Rơm” (Bản Bìa Áo)",
+      "img": "https://cdn0.fahasa.com/media/catalog/product/o/n/one-piece---tap-99---ban-bia-gap_3.jpg",
+      "price": "23.000",
+      "supplier":"Nhà Xuất Bản Kim Đồng",
+      "author":"Eiichiro Oda",
+      "publishing":"Kim Đồng",
+      "form":"Bìa Mềm",
+      "quantity": 5,
+      "rate": 4,
       "title": "bánh làm từ trái cây ",
       "id": "60"
     },
     {
-      "name": "Bánh kem hình gấu",
-      "img": "https://tiembanhdenui.com/wp-content/uploads/2022/12/tb3e.jpg",
-      "price": "34400",
-      "desc": "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive",
+      "name": "One Piece Tập 91: Chuyến Phiêu Lưu Trên Xứ Sở Samurai (Tái Bản 2022)",
+      "img": "https://cdn0.fahasa.com/media/catalog/product/8/9/8935244865998_1_.jpg",
+      "price": "24.000",
+      "supplier":"Nhà Xuất Bản Kim Đồng",
+      "author":"Eiichiro Oda",
+      "publishing":"Kim Đồng",
+      "form":"Bìa Mềm",
       "quantity": 2,
+      "rate": 4.5,
       "title": "bánh làm từ trái cây ",
       "id": "61"
     },
     {
-      "name": "Bánh kem hình lợn",
-      "img": "https://banhkem24h.com/wp-content/uploads/2019/09/banh-kem-con-heo-11-400x400.jpg",
-      "price": "26400",
-      "desc": "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design",
+      "name": "One Piece Tập 96: “Oden Sinh Ra Là Để Nấu Sôi” (Tái Bản 2022)",
+      "img": "https://cdn0.fahasa.com/media/catalog/product/8/9/8935244866049.jpg",
+      "price": "26.400",
+      "supplier":"Nhà Xuất Bản Kim Đồng",
+      "author":"Eiichiro Oda",
+      "publishing":"Kim Đồng",
+      "form":"Bìa Mềm",
       "quantity": 57,
+      "rate": 4.5,
       "title": "bánh làm từ trái cây ",
       "id": "62"
+    },
+    {
+      "name": "One Piece - Tập 68: Liên Minh Hải Tặc (Tái Bản 2022)",
+      "img": "https://cdn0.fahasa.com/media/catalog/product/8/9/8935244865769.jpg",
+      "price": "24.000",
+      "supplier":"Nhà Xuất Bản Kim Đồng",
+      "author":"Eiichiro Oda",
+      "Nhà xuất bản":"Kim Đồng",
+      "publishing":"Bìa Mềm",
+      "quantity": 57,
+      "rate": 4.5,
+      "title": "bánh làm từ trái cây ",
+      "id": "63"
+    },
+    {
+      "name": "One Piece - Tập 81: Cùng Đến Thăm Ngài Nekomamushi (Tái Bản 2023)",
+      "img": "https://cdn0.fahasa.com/media/catalog/product/i/m/image_186906_1.jpg",
+      "price": "28.400",
+      "supplier":"Nhà Xuất Bản Kim Đồng",
+      "author":"Eiichiro Oda",
+      "publishing":"Kim Đồng",
+      "form":"Bìa Mềm",
+      "quantity": 57,
+      "rate": 4,
+      "title": "bánh làm từ trái cây ",
+      "id": "64"
     }
   ],
   "users": [
@@ -69,6 +119,12 @@
       "name": "dattt",
       "role": "member",
       "id": 2
+    },
+    {
+      "email": "quynhntd3010@gmail.com",
+      "password": "$2a$10$b4Tm3YkckRphYZpi5CnkPeMveH5GoC1viatK8kVEcxxUJo6gXWCzu",
+      "name": "quynh",
+      "id": 3
     }
   ],
   "cart": [
@@ -98,6 +154,45 @@
       "quantity": 3,
       "userId": 1,
       "id": 12
+    },
+    {
+      "product": {
+        "name": "Bánh kem hình gấu",
+        "img": "https://tiembanhdenui.com/wp-content/uploads/2022/12/tb3e.jpg",
+        "price": "34400",
+        "desc": "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive",
+        "quantity": 2,
+        "title": "bánh làm từ trái cây ",
+        "id": "61"
+      },
+      "quantity": 1,
+      "id": 13
+    },
+    {
+      "product": {
+        "name": "Bánh kem hình gấu",
+        "img": "https://tiembanhdenui.com/wp-content/uploads/2022/12/tb3e.jpg",
+        "price": "34400",
+        "desc": "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive",
+        "quantity": 2,
+        "title": "bánh làm từ trái cây ",
+        "id": "61"
+      },
+      "quantity": 1,
+      "id": 14
+    },
+    {
+      "product": {
+        "name": "Bánh kem hình gấu",
+        "img": "https://tiembanhdenui.com/wp-content/uploads/2022/12/tb3e.jpg",
+        "price": "34400",
+        "desc": "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive",
+        "quantity": 2,
+        "title": "bánh làm từ trái cây ",
+        "id": "61"
+      },
+      "quantity": 1,
+      "id": 15
     }
   ]
 }

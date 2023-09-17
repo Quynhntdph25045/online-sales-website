@@ -3,6 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { MinusOutlined, PlusOutlined } from '@ant-design/icons';
 import { useState } from 'react';
 import { useAddCartMutation } from '@/api/cart';
+import { Rate } from 'antd';
 
 
 const About = () => {
@@ -30,35 +31,53 @@ const About = () => {
   console.log(user);
   const onHandleAddCart = () => {
     const newProduct = {
-     "product":productData,
-     "quantity": numProduct,
-     "userId": user.id,
+      "product": productData,
+      "quantity": numProduct,
+      "userId": user?.id,
+    }
+    AddCart(newProduct).unwrap().then(() => { alert("thành công") })
   }
-  AddCart(newProduct).unwrap().then(()=>{alert("thành công")})
-   }
 
   return (
-    <div className="continer max-w-4xl mx-auto">
-      <div className=' my-10 mx-auto borber border-2 p-3 grid grid-cols-2 flex justify-items-center items-center space-x-5 mx-auto'>
+    <div className="continer max-w-[84rem] mx-auto borber border-2 rounded-md my-10">
+      <h2 className='font-bold text-3xl mb-5 text-center my-5'>Chi tiết sản phẩm</h2>
+      <div className=' p-5 grid grid-cols-2 gap-3 justify-items-center items-center space-x-5'>
         <div>
-          <h2 className='font-bold text-[25px] mb-5'>Chi tiết sản phẩm</h2>
-          <img src={productData?.img} alt="" />
+          <img src={productData?.img} alt="" className='w-[500px]' />
         </div>
+
         <div>
-          <p>Name: {productData?.name}</p>
-          <p>Price: {productData?.price}</p>
-          <p>Pesc: {productData?.desc}</p>
-          <p>Quantity: {productData?.quantity}</p>
-          <div style={{ marginBottom: '10px' }}>Số lượng</div>
-          <button style={{ border: 'none', background: 'transparent', cursor: 'pointer' }} onClick={() => handleChangeCount('decrease', numProduct === 1)}>
-            <MinusOutlined style={{ color: '#000', fontSize: '20px' }} />
-          </button>
-          <input type="text" onChange={onChange} defaultValue={1} min={1} className='w-7 ml-5' value={numProduct} />
-          {/* <WrapperInputNumber   max={productDetails?.countInStock} min={1} value={numProduct}  /> */}
-          <button style={{ border: 'none', background: 'transparent', cursor: 'pointer' }} onClick={() => handleChangeCount('increase', numProduct === productData?.quantity)}>
-            <PlusOutlined style={{ color: '#000', fontSize: '20px' }} />
-          </button> <br />
-          <button className='border border-gray-300 rounded-lg mt-3 text-gray-500 px-5 hover:text-red-500' onClick={()=>onHandleAddCart()} >Thêm sản phẩm</button>
+          <h2 className='font-medium text-xl'>{productData?.name}</h2>
+
+          <div className="thông-tin flex justify-between mr-16 mt-10">
+            <div className="tt-1">
+              <p>Nhà cung cấp: <span className='font-semibold'>{productData?.supplier}</span></p>
+              <p>Tác giả: <span className='font-semibold'>{productData?.author}</span></p>
+            </div>
+            <div className="tt-2">
+              <p>Nhà xuất bản: <span className='font-semibold'>{productData?.publishing}</span></p>
+              <p>Hình thức bìa: <span className='font-semibold'>{productData?.form}</span></p>
+            </div>
+          </div>
+
+          <Rate className='block' disabled allowHalf defaultValue={productData?.rate} />
+
+          <p className='text-red-500 text-3xl font-semibold my-6'>{productData?.price} VNĐ</p>
+
+          <div className='flex items-center'>
+            <p className=' mr-10'>Số lượng:</p>
+            <div className="number border w-[170px] rounded space-x-5">
+            <button style={{ border: 'none', background: 'transparent', cursor: 'pointer', padding: "10px" }} onClick={() => handleChangeCount('decrease', numProduct === 1)}>
+              <MinusOutlined style={{ color: '#000', fontSize: '20px' }} />
+            </button>
+            <input type="text" onChange={onChange} defaultValue={1} min={1} className='w-12 px-5' value={numProduct}/>
+            {/* <WrapperInputNumber   max={productDetails?.countInStock} min={1} value={numProduct}  /> */}
+            <button style={{ border: 'none', background: 'transparent', cursor: 'pointer', padding: "10px"}} onClick={() => handleChangeCount('increase', numProduct === productData?.quantity)}>
+              <PlusOutlined style={{ color: '#000', fontSize: '20px' }} />
+            </button>
+            </div>
+          </div>
+          <button className='mt-8 border py-3 w-full bg-red-600 text-white font-medium hover:bg-red-500 rounded-md' onClick={() => onHandleAddCart()} >Thêm sản phẩm</button>
         </div>
       </div>
     </div>
