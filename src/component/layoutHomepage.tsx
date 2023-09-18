@@ -24,10 +24,10 @@ const LayoutHomepage = () => {
           <div className='flex items-center space-x-6'>
             <nav >
               <ul className='flex space-x-5 text-lg '>
-                <li> <a href="/" className='flex items-center hover:text-gray-300 '> < AiFillHome />Home page</a></li>
+                <li> <a href="/" className='flex items-center hover:text-gray-300 px'> < AiFillHome/>Home page</a></li>
                 <li><a href="" className=' hover:text-gray-300'>About us </a></li>
                 <li><a href="" className=' hover:text-gray-300'>Trademark</a></li>
-                <li><a href="/cart" className=' flex items-center hover:text-gray-300'><AiOutlineShopping size={25} />Oder</a></li>
+                <li><a href="/cart" className=' flex items-center hover:text-gray-300'><AiOutlineShopping size={20} />Oder</a></li>
               </ul>
             </nav>
             <button className='flex space-x-5 text-xl font-bold bg-gray-200 rounded-3xl px-4  hover:text-gray-300'><a href=" /signin"> Signin </a></button>

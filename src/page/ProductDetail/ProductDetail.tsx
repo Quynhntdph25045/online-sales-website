@@ -35,7 +35,12 @@ const About = () => {
       "quantity": numProduct,
       "userId": user?.id,
     }
+    if(!user){
+      alert("bạn cần đăng nhập")
+    }
+    else{
     AddCart(newProduct).unwrap().then(() => { alert("thành công") })
+    }
   }
 
   return (
@@ -70,7 +75,7 @@ const About = () => {
             <button style={{ border: 'none', background: 'transparent', cursor: 'pointer', padding: "10px" }} onClick={() => handleChangeCount('decrease', numProduct === 1)}>
               <MinusOutlined style={{ color: '#000', fontSize: '20px' }} />
             </button>
-            <input type="text" onChange={onChange} defaultValue={1} min={1} className='w-12 px-5' value={numProduct}/>
+            <input type="text" onChange={onChange} defaultValue={1} min={1} className='w-12 px-5 mx-5' value={numProduct}/>
             {/* <WrapperInputNumber   max={productDetails?.countInStock} min={1} value={numProduct}  /> */}
             <button style={{ border: 'none', background: 'transparent', cursor: 'pointer', padding: "10px"}} onClick={() => handleChangeCount('increase', numProduct === productData?.quantity)}>
               <PlusOutlined style={{ color: '#000', fontSize: '20px' }} />
