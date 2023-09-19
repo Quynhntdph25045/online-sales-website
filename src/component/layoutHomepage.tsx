@@ -1,5 +1,5 @@
 import React from 'react'
-import { AiOutlineMail, AiOutlinePhone, AiFillHome, AiOutlineLogout, AiOutlineShopping } from "react-icons/ai";
+import { AiOutlineMail, AiOutlinePhone, AiFillHome, AiOutlineLogout, AiOutlineShopping, AiTwotoneHome, AiOutlineShoppingCart, AiOutlineLogin } from "react-icons/ai";
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import book from "../assets/book.png"
 import logobanner from "../assets/one-piece-logo.png"
@@ -11,6 +11,11 @@ const LayoutHomepage = () => {
     localStorage.removeItem("user");
     navigate("/")
   }
+
+  const userString = localStorage.getItem('user');
+  const user = userString ? JSON.parse(userString) : null;
+
+
   return (
     <div className="bg-white">
       <header>
@@ -24,14 +29,17 @@ const LayoutHomepage = () => {
           <div className='flex items-center space-x-6'>
             <nav >
               <ul className='flex space-x-5 text-lg '>
-                <li> <a href="/" className='flex items-center hover:text-gray-300 '> < AiFillHome />Home page</a></li>
-                <li><a href="" className=' hover:text-gray-300'>About us </a></li>
-                <li><a href="" className=' hover:text-gray-300'>Trademark</a></li>
-                <li><a href="/cart" className=' flex items-center hover:text-gray-300'><AiOutlineShopping size={25} />Oder</a></li>
+                <li> <a href="/" className='flex items-center hover:text-gray-300 px'>Home page</a></li>
+                <li><a href="#" className=' hover:text-gray-300'>About us </a></li>
+                <li><a href="#" className=' hover:text-gray-300'>Trademark</a></li>
+                <li><a href="/cart" className=' flex items-center hover:text-gray-300'>Oder</a></li>
               </ul>
             </nav>
-            <button className='flex space-x-5 text-xl font-bold bg-gray-200 rounded-3xl px-4  hover:text-gray-300'><a href=" /signin"> Signin </a></button>
-            <button className="flex items-center text-xl font-bold bg-gray-200 rounded-3xl px-4 " onClick={() => Logout()}>Logout <AiOutlineLogout /> </button>
+            {!user && (
+            <><button className='flex space-x-5 text-xl font-bold rounded bg-red-200 px-4 py-1 hover:text-white hover:bg-blue-500'><a href=" /signup">Signup </a></button>
+            <button className='flex space-x-5 text-xl font-bold rounded bg-red-200 px-4 py-1 hover:text-white hover:bg-blue-500'><a href=" /signin">Signin</a></button></>
+            )}
+            {user && (<button className="flex items-center text-xl font-bold rounded bg-red-200 px-4 py-1  hover:text-white hover:bg-red-500" onClick={() => Logout()}>Logout</button>)}
           </div>
         </div>
 
