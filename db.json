@@ -125,6 +125,12 @@
       "password": "$2a$10$b4Tm3YkckRphYZpi5CnkPeMveH5GoC1viatK8kVEcxxUJo6gXWCzu",
       "name": "quynh",
       "id": 3
+    },
+    {
+      "email": "quynhntd12345@gmail.com",
+      "password": "$2a$10$6Rc6j5c4CroKSueG1cFNAOGq1WUHTGhmvSLr7sApaffpZyfqpmqnK",
+      "name": "quynh12345",
+      "id": 4
     }
   ],
   "cart": [
@@ -145,6 +151,60 @@
       "quantity": 4,
       "userId": 2,
       "id": 2
+    },
+    {
+      "product": {
+        "name": "One Piece - Tập 68: Liên Minh Hải Tặc (Tái Bản 2022)",
+        "img": "https://cdn0.fahasa.com/media/catalog/product/8/9/8935244865769.jpg",
+        "price": "24.000",
+        "supplier": "Nhà Xuất Bản Kim Đồng",
+        "author": "Eiichiro Oda",
+        "publishing": "Kim Đồng",
+        "form": "Bìa Mềm",
+        "quantity": 57,
+        "rate": 4.5,
+        "title": "bánh làm từ trái cây ",
+        "id": "63"
+      },
+      "quantity": 3,
+      "userId": 4,
+      "id": 6
+    },
+    {
+      "product": {
+        "name": "One Piece - Tập 99: “Luffy Mũ Rơm” (Bản Bìa Áo)",
+        "img": "https://cdn0.fahasa.com/media/catalog/product/o/n/one-piece---tap-99---ban-bia-gap_3.jpg",
+        "price": "23.000",
+        "supplier": "Nhà Xuất Bản Kim Đồng",
+        "author": "Eiichiro Oda",
+        "publishing": "Kim Đồng",
+        "form": "Bìa Mềm",
+        "quantity": 5,
+        "rate": 4,
+        "title": "bánh làm từ trái cây ",
+        "id": "60"
+      },
+      "quantity": 3,
+      "userId": 4,
+      "id": 7
+    },
+    {
+      "product": {
+        "name": "One Piece - Tập 99: “Luffy Mũ Rơm” (Bản Bìa Cứng) - Limited Edition - Tặng Kèm Postcard PVC Luffy",
+        "img": "https://cdn0.fahasa.com/media/catalog/product/8/9/8935244874983_1_1.jpg",
+        "price": "142.500",
+        "supplier": "Nhà Xuất Bản Kim Đồng",
+        "author": "Eiichiro Oda",
+        "publishing": "Kim Đồng",
+        "form": "Bìa Cứng",
+        "quantity": 5,
+        "title": "bánh làm từ trái cây ",
+        "rate": 5,
+        "id": "57"
+      },
+      "quantity": 1,
+      "userId": 4,
+      "id": 8
     }
   ]
 }
