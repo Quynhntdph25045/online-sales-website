@@ -29,62 +29,37 @@ const Signin = () => {
       })
   };
   if (error) {
-    if ("data" in error){
+    if ("data" in error) {
       console.log(error.data);
-    alert(error.data)
+      alert(error.data)
     }
   }
   return (
 
     <>
-    <div className="login-box grid grid-cols-2 gap-10 w-[800px]">
-    <img src={luffy} alt="" className='luffy'/>
-    <div className=" my-auto space-y-18">
-    <h2 className='font-semibold text-2xl'>Login</h2>
-    <form onSubmit={handleSubmit(onFinish)}>
-          <div className="user-box">
-            <input type="email" {...register("email", { required: true })} />
-            <label>Username</label>
-          </div>
-          <div className="user-box">
-            <input type="password"  {...register("password", { required: true })} />
-            <label>Password</label>
-          </div>
-          <a className='mx-32'>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <button>submit</button>
-          </a>
-        </form>
-    </div>
-    </div>
-
-
-
-      {/* <div className="login-box w-[800px]" >
-        <div className="grid grid-cols-2 gap-10">
-          <img src={luffy} alt="" />
-        <form onSubmit={handleSubmit(onFinish)}>
-          <div className="user-box">
-            <input type="email" {...register("email", { required: true })} />
-            <label>Username</label>
-          </div>
-          <div className="user-box">
-            <input type="password"  {...register("password", { required: true })} />
-            <label>Password</label>
-          </div>
-          <a >
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <button>submit</button>
-          </a>
-        </form>
+      <div className="login-box grid grid-cols-2 gap-10 w-[800px]">
+        <img src={luffy} alt="" className='luffy' />
+        <div className=" my-auto space-y-18">
+          <h2 className='font-semibold text-2xl'>Login</h2>
+          <form onSubmit={handleSubmit(onFinish)}>
+            <div className="user-box">
+              <input type="email" {...register("email", { required: true })} />
+              <label>Username</label>
+            </div>
+            <div className="user-box">
+              <input type="password"  {...register("password", { required: true })} />
+              <label>Password</label>
+            </div>
+            <a className='mx-32'>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <button>submit</button>
+            </a>
+          </form>
         </div>
-      </div> */}
+      </div>
     </>
 
   );
@@ -92,23 +67,3 @@ const Signin = () => {
 }
 
 export default Signin
-
-
-
-{/* <form onSubmit={handleSubmit(onFinish)}>
-          <div className="user-box">
-            <input type="email" {...register("email", { required: true })} />
-            <label>Username</label>
-          </div>
-          <div className="user-box">
-            <input type="password"  {...register("password", { required: true })} />
-            <label>Password</label>
-          </div>
-          <a >
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <button>submit</button>
-          </a>
-        </form> */}
