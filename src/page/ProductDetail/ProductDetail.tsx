@@ -81,7 +81,8 @@ const About = () => {
             </button>
             </div>
           </div>
-          <button className='mt-8 border py-3 w-full bg-red-600 text-white font-medium hover:bg-red-500 rounded-md' onClick={() => onHandleAddCart()} >Thêm sản phẩm</button>
+          <button className='mt-6 border py-3 w-full bg-red-600 text-white font-medium hover:bg-red-500 rounded-md' onClick={() => onHandleAddCart()} >Thêm sản phẩm</button>
+          <button className='mt-6 border py-3 w-full bg-red-600 text-white font-medium hover:bg-red-500 rounded-md' onClick={() => onHandleAddCart()} >đặt hàng</button>
         </div>
       </div>
     </div>

@@ -8,7 +8,7 @@ import AdminAddProduct from "./page/admin/AdminAddProduct";
 import About from "./page/ProductDetail/ProductDetail";
 import Signin from "./page/auth/signin";
 import Signup from "./page/auth/signup";
-import MyOrder from "./page/MyOder/MyOrder";
+import MyOrder from "./page/MyCart/MyCart";
 
 export const router = createBrowserRouter([
     {path:"/signin",element:<Signin/>},
