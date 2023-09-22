@@ -1,4 +1,5 @@
 import { useGetCartsQuery, useRemoveCartMutation } from '@/api/cart';
+import { message } from 'antd';
 import React, { useEffect, useState } from 'react'
 import { AiTwotoneDelete } from 'react-icons/ai';
 import { useNavigate } from 'react-router-dom';
@@ -11,7 +12,7 @@ const MyOrder = () => {
   if (!user) {
     return (
       <div className='max-w-7xl mx-auto my-5  border border-gray-300 border-3 p-5 text-center' >
-        <p>Không có sản phẩm</p>
+       <span>Không có sản phẩn</span>
       </div>
     )
   }
@@ -23,7 +24,9 @@ const MyOrder = () => {
       setdata(data?.filter((item: any) => (item.userId == user.id)))
     }, [data])
     const onHandleReomveCart = (id: any) => {
-      Removecart(id).unwrap().then(() => { alert('xóa thành công') })
+      if(confirm("Are you sure you want to remove this")){
+        Removecart(id).unwrap().then(() => message.success("xóa thành công"))
+        }
     }
     return (
       <div className='max-w-7xl mx-auto my-10 p-5 bg-gray-100'>
@@ -56,7 +59,7 @@ const MyOrder = () => {
             </div>
 
             <div className='m-auto'>
-              <p className='text-xl text-red-500 font-bold'>{item.quantity * item.product.price} VNĐ</p>
+              <p className='text-xl text-red-500 font-bold'>{item.quantity * item.product.price}.000 VNĐ</p>
             </div>
 
             <div className="action m-auto">

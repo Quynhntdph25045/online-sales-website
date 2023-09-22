@@ -19,7 +19,7 @@ const LayoutHomepage = () => {
   return (
     <div className="bg-white">
       <header>
-        <div className='w-full flex justify-between px-12 py-3 z-30 fixed bg-white'>
+        <div className='w-full flex justify-between px-5 py-3 z-30 fixed bg-white'>
           <Link to={"/"}>
           <div className="logo flex items-center space-x-3">
           <img className='w-[50px]' src={logo} alt="" />
@@ -39,7 +39,7 @@ const LayoutHomepage = () => {
             <><button className='flex space-x-5 text-xl font-bold rounded bg-red-200 px-4 py-1 hover:text-white hover:bg-blue-500'><a href=" /signup">Signup </a></button>
             <button className='flex space-x-5 text-xl font-bold rounded bg-red-200 px-4 py-1 hover:text-white hover:bg-blue-500'><a href=" /signin">Signin</a></button></>
             )}
-            {user && (<button className="flex items-center text-xl font-bold rounded bg-red-200 px-4 py-1  hover:text-white hover:bg-red-500" onClick={() => Logout()}>Logout</button>)}
+            {user && (<button className="flex items-center text-sm font-bold rounded px-4 py-1 underline hover:text-red-500  " onClick={() => Logout()}>Logout <AiOutlineLogout/></button>)}
           </div>
         </div>
 
