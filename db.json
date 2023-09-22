@@ -151,6 +151,60 @@
       "quantity": 1,
       "userId": 2,
       "id": 1
+    },
+    {
+      "product": {
+        "name": "One Piece - Tập 68: Liên Minh Hải Tặc (Tái Bản 2022)",
+        "img": "https://cdn0.fahasa.com/media/catalog/product/8/9/8935244865769.jpg",
+        "price": "24.000",
+        "supplier": "Nhà Xuất Bản Kim Đồng",
+        "author": "Eiichiro Oda",
+        "publishing": "Kim Đồng",
+        "form": "Bìa Mềm",
+        "quantity": 57,
+        "rate": 4.5,
+        "title": "bánh làm từ trái cây ",
+        "id": "63"
+      },
+      "quantity": 1,
+      "userId": 2,
+      "id": 2
+    },
+    {
+      "product": {
+        "name": "One Piece - Tập 99: “Luffy Mũ Rơm” (Bản Bìa Áo)",
+        "img": "https://cdn0.fahasa.com/media/catalog/product/o/n/one-piece---tap-99---ban-bia-gap_3.jpg",
+        "price": "23.000",
+        "supplier": "Nhà Xuất Bản Kim Đồng",
+        "author": "Eiichiro Oda",
+        "publishing": "Kim Đồng",
+        "form": "Bìa Mềm",
+        "quantity": 5,
+        "rate": 4,
+        "title": "bánh làm từ trái cây ",
+        "id": "60"
+      },
+      "quantity": 5,
+      "userId": 2,
+      "id": 3
+    },
+    {
+      "product": {
+        "name": "One Piece Tập 96: “Oden Sinh Ra Là Để Nấu Sôi” (Tái Bản 2022)",
+        "img": "https://cdn0.fahasa.com/media/catalog/product/8/9/8935244866049.jpg",
+        "price": "26.400",
+        "supplier": "Nhà Xuất Bản Kim Đồng",
+        "author": "Eiichiro Oda",
+        "publishing": "Kim Đồng",
+        "form": "Bìa Mềm",
+        "quantity": 57,
+        "rate": 4.5,
+        "title": "bánh làm từ trái cây ",
+        "id": "62"
+      },
+      "quantity": 5,
+      "userId": 2,
+      "id": 4
     }
   ]
 }

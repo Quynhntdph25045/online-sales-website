@@ -1,12 +1,13 @@
 import { useGetProductByIdQuery } from '@/api/product';
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { MinusOutlined, PlusOutlined } from '@ant-design/icons';
 import { useState } from 'react';
 import { useAddCartMutation } from '@/api/cart';
 import { Rate, message } from 'antd';
 
 
-const About = () => {
+const ProductDetail
+ = () => {
   const [numProduct, setNumProduct] = useState(1)
   const handleChangeCount = (type: any, limited: any) => {
     if (type === 'increase') {
@@ -74,8 +75,7 @@ const About = () => {
             <button style={{ border: 'none', background: 'transparent', cursor: 'pointer', padding: "10px" }} onClick={() => handleChangeCount('decrease', numProduct === 1)}>
               <MinusOutlined style={{ color: '#000', fontSize: '20px' }} />
             </button>
-            <input type="number" onChange={onChange} defaultValue={1} min={1}  className='w-12 px-5 mx-5' value={numProduct}/>
-            {/* <WrapperInputNumber   max={productDetails?.countInStock} min={1} value={numProduct}  /> */}
+            <input type="text" onChange={onChange} defaultValue={1} min={1}  className='w-12 mx-5 text-center' value={numProduct}/>
             <button style={{ border: 'none', background: 'transparent', cursor: 'pointer', padding: "10px"}} onClick={() => handleChangeCount('increase', numProduct === productData?.quantity)}>
               <PlusOutlined style={{ color: '#000', fontSize: '20px' }} />
             </button>
@@ -89,4 +89,4 @@ const About = () => {
   )
 }
 
-export default About
+export default ProductDetail
