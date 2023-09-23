@@ -9,7 +9,7 @@ import Fuse from 'fuse.js';
 const Home = () => {
   const { data: productData } = useGetProductsQuery();
   const [searchResults, setSearchResults] = useState<any[]>([]);
-  const [inputSearchValue ,setInputSearchValue] = useState()
+  const [inputSearchValue, setInputSearchValue] = useState()
   const fuseOptions = {
     keys: [
       'name',
@@ -17,15 +17,15 @@ const Home = () => {
     ],
   };
   const fuse = new Fuse(productData, fuseOptions);
-   const onHandlechang = (e:any)=>{
-    setInputSearchValue(e.target.value);    
-   }
-  const handleSearch = useCallback((keyword:any) => {
+  const onHandlechang = (e: any) => {
+    setInputSearchValue(e.target.value);
+  }
+  const handleSearch = useCallback((keyword: any) => {
     // const keyword = e.target.value;
     const results = fuse.search(keyword);
     const matchedProducts = results.map((result) => result.item);
     if (matchedProducts.length === 0 && keyword !== '') {
-     message.error('không có sản phẩm phù hợp')
+      message.error('không có sản phẩm phù hợp')
     };
     setSearchResults(matchedProducts);
   }, [fuse]);
@@ -35,9 +35,12 @@ const Home = () => {
   return (
     <div className='max-w-[84rem] mx-auto my-16'>
       <img src={logobanner} alt="" className='w-[200px] mx-auto ' />
-      <input type="text" placeholder='Search' onChange={onHandlechang}/>
-      <button onClick={()=>handleSearch(inputSearchValue)}>search</button>
-      <div className="grid grid-cols-4 gap-5  bg-gray-100 p-5">
+      <div className=" bg-gray-100">
+      <div className="border-2 border-gray-300 inline-block rounded-l-3xl ml-[56.5rem] my-5">
+        <input type="text" placeholder='Write in here' onChange={onHandlechang} className=' text-center rounded-l-3xl px-16 py-2 outline-none' />
+        <button onClick={() => handleSearch(inputSearchValue)} className=' text-center text-white font-bold px-5 py-2 bg-black'>Search</button>
+      </div>
+      <div className="grid grid-cols-4 gap-5 p-5">
         {displayProducts?.map((item: any) => (
           <Link to={"/detail/" + item.id} key={item.id}>
             <div className='text-center bg-white p-5'>
@@ -48,6 +51,7 @@ const Home = () => {
             </div>
           </Link>
         ))}
+      </div>
       </div>
     </div>
   );
